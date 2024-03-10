@@ -17,7 +17,7 @@ export default function NewsView() {
 
   return (
     <Container maxWidth={settings.themeStretch ? false : 'xl'}>
-      <Typography variant="h4"> Page One </Typography>
+      <Typography variant="h4"> News </Typography>
 
       <Box
         sx={{
