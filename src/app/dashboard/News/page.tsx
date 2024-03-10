@@ -1,10 +1,9 @@
 import NewsView from 'src/sections/News/view';
-import OneView from 'src/sections/Dashboard/view';
 
 // ----------------------------------------------------------------------
 
 export const metadata = {
-  title: 'Dashboard: News',
+  title: 'Sandy: News',
 };
 
 export default function Page() {

@@ -3,7 +3,7 @@ import TransactionsView from 'src/sections/Transactions/view';
 // ----------------------------------------------------------------------
 
 export const metadata = {
-  title: 'Dashboard: Four',
+  title: 'Sandy: Transactions',
 };
 
 export default function Page() {

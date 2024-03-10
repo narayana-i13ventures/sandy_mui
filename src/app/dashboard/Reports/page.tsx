@@ -3,7 +3,7 @@ import ReportsView from 'src/sections/Reports/view';
 // ----------------------------------------------------------------------
 
 export const metadata = {
-  title: 'Dashboard: Four',
+  title: 'Sandy: Reports',
 };
 
 export default function Page() {

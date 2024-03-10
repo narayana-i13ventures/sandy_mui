@@ -1,11 +1,11 @@
-import OneView from 'src/sections/Dashboard/view';
+import DashboardView from 'src/sections/Dashboard/view';
 
 // ----------------------------------------------------------------------
 
 export const metadata = {
-  title: 'Dashboard: One',
+  title: 'Sandy: Dashboard',
 };
 
 export default function Page() {
-  return <OneView />;
+  return <DashboardView />;
 }
