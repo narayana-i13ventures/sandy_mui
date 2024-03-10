@@ -10,7 +10,6 @@ import ProgressBar from 'src/components/progress-bar';
 import { MotionLazy } from 'src/components/animate/motion-lazy';
 import { SettingsDrawer, SettingsProvider } from 'src/components/settings';
 
-import { AuthProvider } from 'src/auth/context/jwt';
 
 // ----------------------------------------------------------------------
 
@@ -43,27 +42,27 @@ export default function RootLayout({ children }: Props) {
   return (
     <html lang="en" className={primaryFont.className}>
       <body suppressHydrationWarning>
-        <AuthProvider>
-          <SettingsProvider
-            defaultSettings={{
-              themeMode: 'light', // 'light' | 'dark'
-              themeDirection: 'ltr', //  'rtl' | 'ltr'
-              themeContrast: 'default', // 'default' | 'bold'
-              themeLayout: 'vertical', // 'vertical' | 'horizontal' | 'mini'
-              themeColorPresets: 'default', // 'default' | 'cyan' | 'purple' | 'blue' | 'orange' | 'red'
-              themeStretch: false,
-            }}
-          >
-            <ThemeProvider>
-              <MotionLazy>
-                <SettingsDrawer />
-                <ProgressBar />
-                {children}
-              </MotionLazy>
-            </ThemeProvider>
-          </SettingsProvider>
-        </AuthProvider>
+        {/* <AuthProvider> */}
+        <SettingsProvider
+          defaultSettings={{
+            themeMode: 'light', // 'light' | 'dark'
+            themeDirection: 'ltr', //  'rtl' | 'ltr'
+            themeContrast: 'default', // 'default' | 'bold'
+            themeLayout: 'vertical', // 'vertical' | 'horizontal' | 'mini'
+            themeColorPresets: 'default', // 'default' | 'cyan' | 'purple' | 'blue' | 'orange' | 'red'
+            themeStretch: false,
+          }}
+        >
+          <ThemeProvider>
+            <MotionLazy>
+              <SettingsDrawer />
+              <ProgressBar />
+              {children}
+            </MotionLazy>
+          </ThemeProvider>
+        </SettingsProvider>
+        {/* </AuthProvider> */}
       </body>
-    </html>
+    </html >
   );
 }
