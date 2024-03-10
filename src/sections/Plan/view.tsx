@@ -9,7 +9,7 @@ import { useSettingsContext } from 'src/components/settings';
 
 // ----------------------------------------------------------------------
 
-export default function FourView() {
+export default function PlanView() {
   const settings = useSettingsContext();
 
   return (

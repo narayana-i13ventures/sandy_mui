@@ -1,4 +1,4 @@
-import FourView from 'src/sections/four/view';
+import ReportsView from 'src/sections/Reports/view';
 
 // ----------------------------------------------------------------------
 
@@ -7,5 +7,5 @@ export const metadata = {
 };
 
 export default function Page() {
-  return <FourView />;
+  return <ReportsView />;
 }

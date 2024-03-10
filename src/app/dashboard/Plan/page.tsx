@@ -1,4 +1,4 @@
-import FourView from 'src/sections/four/view';
+import PlanView from 'src/sections/Plan/view';
 
 // ----------------------------------------------------------------------
 
@@ -7,5 +7,5 @@ export const metadata = {
 };
 
 export default function Page() {
-  return <FourView />;
+  return <PlanView />;
 }
